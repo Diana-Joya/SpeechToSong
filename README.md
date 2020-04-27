@@ -6,15 +6,18 @@ This application utilizes Speech-to-Text deep learning methods to convert speech
 
 To run this project, you'll need the following:
 - Spotify Client Id & Client Secret
+
   To get a Spotify Client Id & Secret, you can follow the instructions provided by the following website: 
   https://developer.spotify.com/dashboard/
   Once you've acquired your client Id & secret, you must replace the authentication strings in lines 57 and 58 of the 
   IntegrateAPIs.py file.
 - Genius Access Token
+
   To get a Genius Access Token, you can follow the instructions provided by the following website:
   https://docs.genius.com/
   Once you've acquired your access token, you must replace the authentication string in line 8 of the IntegrateAPIs.py file.
 - Flask
+
   To run this project, you will need to have Flask installed in your local machine. If you don't have Flask, you can follow the
   installation instructions provided by the Flask documentation: https://flask.palletsprojects.com/en/1.1.x/
 
