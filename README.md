@@ -2,6 +2,10 @@
 
 This application utilizes Speech-to-Text deep learning methods to convert speech input from the user into a string that will be used by the Genius API to find a song which contains such words. Once a song is found by the Genius API, the song and artist returned will be used to search the song in the Spofity API so it can be played for the user. 
 
+## Demo
+
+A demo of this project can be viewed starting at 04:15 here: https://www.youtube.com/watch?v=yrBIzegxFpw&t=273s
+
 ## Setup
 
 To run this project, you'll need the following:
