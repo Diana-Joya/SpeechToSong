@@ -32,7 +32,7 @@ To run this project, you'll need the following:
 The SpeechToSong repository contains the files needed to run a) the SpeechToSong web application developed using Python's SpeechRecognizer library, and b) The Speech to Text Training files to develop a simple small-scale speech to text training model for one word commands. 
 
 ### a) SpeechToSong Web Application
-#### Python Packages: 
+#### Python Modules: 
 SpeechToSong utilizes the following Python libraries:
 - Flask
 - SpeechRecognition
@@ -63,7 +63,7 @@ Use a production WSGI server instead.
 **Note: You MUST have added your own Genius and Spotify keys to the IntegrateAPIs.py file or the project will NOT run!**
 
 ### b) Speech to Text Training
-#### Python Packages: 
+#### Python Modules: 
 Speech To Text Training utilizes the following Python libraries:
 - Tensorflow
 - Keras
