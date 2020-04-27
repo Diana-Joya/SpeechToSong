@@ -6,6 +6,7 @@ This application utilizes Speech-to-Text deep learning methods to convert speech
 
 A demo of this project can be viewed starting at minute 04:15 here: https://www.youtube.com/watch?v=yrBIzegxFpw&t=273s
 ![Home Page](https://github.com/Diana-Joya/SpeechToSong/blob/master/Demo/Home.JPG)
+![Results Page](https://github.com/Diana-Joya/SpeechToSong/blob/master/Demo/Results.JPG)
 
 ## Setup
 
