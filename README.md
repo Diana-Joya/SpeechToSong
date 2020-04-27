@@ -41,10 +41,9 @@ SpeechToSong utilizes the following Python libraries:
 #### Installing:
 
 1. In the main page of the repository, use the dropdown menu to 'clone or download' the repository. 
-2. If you choose to download the repository: 
-- Unzip the files inside the downloaded zip folder into your preferred local folder. 
-- If you have python installed in your local machine, double click the **speech_to_song.py** file.
-- A window should pop up with the following information:
+2. Once you have the files in your local machine, make sure to update the IntegrateAPIs.py file with your Spotify and Genius authentication keys. 
+3. Run the **speech_to_song.py** file.
+   A window should pop up with the following information:
 ```
 * Serving Flask app "speech_to_song" (lazy loading)
 * Enviroment: production
@@ -57,10 +56,26 @@ Use a production WSGI server instead.
 * Debugger PIN: 307-145-361
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
-- Run the localhost address ( http://127.0.0.1:5000/ ) in your preferred browser.
+4. Run the localhost address ( http://127.0.0.1:5000/ ) in your preferred browser.
+
+### b) Speech to Text Training
+#### Python Packages: 
+Speech To Text Training utilizes the following Python libraries:
+- Tensorflow
+- Keras
+- librosa
+- sklearn
+
+#### Setup:
+1. Make sure you have the required python packages installed in your IDE. To create this project, I used PyCharm 2019.2.3 and Python 3.6.
+2. Download the data set from Kaggle ( https://www.kaggle.com/c/tensorflow-speech-recognition-challenge/data ). Then replace the contents inside 'speech to text training/training_data_set/' with the files inside the Kaggle data set folder. 
+3. Run 'training_model.py' to train the speech to text model. 
+
+#### Testing the Model:
+1. After training the model, run 'test_prediction.py'. A random interger will serve as the index to pick an audio file from the data set, then the application will compare it's prediction with the actual audio file label.
 
 
-
+## More Information
 For more information on:
 
 - **Genius API:** https://docs.genius.com/#/getting-started-h1
@@ -69,11 +84,3 @@ For more information on:
 ### Note: 
 This application is a student project for CPSC 481 - Artificial Intelligence 
 
-
-
-
-To use speech to text training:
-- Tensorflow
-- Keras
-- librosa
-- sklearn
