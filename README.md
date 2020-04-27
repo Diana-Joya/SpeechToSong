@@ -60,6 +60,8 @@ Use a production WSGI server instead.
 ```
 4. Run the localhost address ( http://127.0.0.1:5000/ ) in your preferred browser.
 
+**Note: You MUST have added your own Genius and Spotify keys to the IntegrateAPIs.py file or the project will NOT run!**
+
 ### b) Speech to Text Training
 #### Python Packages: 
 Speech To Text Training utilizes the following Python libraries:
