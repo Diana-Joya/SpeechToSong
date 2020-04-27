@@ -2,6 +2,22 @@
 
 This application utilizes Speech-to-Text deep learning methods to convert speech input from the user into a string that will be used by the Genius API to find a song which contains such words. Once a song is found by the Genius API, the song and artist returned will be used to search the song in the Spofity API so it can be played for the user. 
 
+## Setup
+
+To run this project, you'll need the following:
+- Spotify Client Id & Client Secret
+  To get a Spotify Client Id & Secret, you can follow the instructions provided by the following website: 
+  https://developer.spotify.com/dashboard/
+  Once you've acquired your client Id & secret, you must replace the authentication strings in lines 57 and 58 of the 
+  IntegrateAPIs.py file.
+- Genius Access Token
+  To get a Genius Access Token, you can follow the instructions provided by the following website:
+  https://docs.genius.com/
+  Once you've acquired your access token, you must replace the authentication string in line 8 of the IntegrateAPIs.py file.
+- Flask
+  To run this project, you will need to have Flask installed in your local machine. If you don't have Flask, you can follow the
+  installation instructions provided by the Flask documentation: https://flask.palletsprojects.com/en/1.1.x/
+
 ## Getting Started
 
 The SpeechToSong repository contains the files needed to run a) the SpeechToSong web application developed using Python's SpeechRecognizer library, and b) The Speech to Text Training files to develop a simple small-scale speech to text training model for one word commands. 
@@ -16,7 +32,6 @@ SpeechToSong utilizes the following Python libraries:
 - Sounddevice & Soundfile
 
 #### Installing:
-To run this project, you will need to have Flask installed in your local machine. If you don't have Flask, you can follow the installation instructions provided by the Flask documentation: https://flask.palletsprojects.com/en/1.1.x/
 
 1. In the main page of the repository, use the dropdown menu to 'clone or download' the repository. 
 2. If you choose to download the repository: 
