@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}SpeechToSong{% endblock %}
+{% block content %}
+<div class="results-body" id="font">
+    <nav class="navbar">
+        <a class="navbar-header" href="/">SpeechToSong</a>
+    </nav>
+    <form action="#" method="post">
+        {% if track is none: %}
+            <h2 class="query-error-message">Sorry! No track has been found!</h2>
+            <br></br>
+            <div class="button"><input type="submit" name="try-again" value="Try Again" class="btn btn-danger"></div>
+        {% else %}
+            <h2 class="returned">Your search has returned:</h2>
+            <div class="results">
+                <div class="cover">
+                    {% if track['album']['images'][0]['url'] is not none: %}
+                        <p><img class="cover-art" src={{track['album']['images'][0]['url']}} alt='Cover art'></p>
+                    {% else %}
+                        <p id="by-font">Sorry! No cover art preview available for this track.</p>
+                    {% endif %}
+                </div>
+                <br>
+                <div class="info">
+                    <div class="audio-title">
+                        <h3 id="artist-font">{{song}}</h3>
+                        <p id="by-font">by</p>
+                        <h3 id="track-font">{{artist}}</h3>
+                    </div>
+                    {% if track['preview_url'] is not none: %}
+                        <p><audio class="audio-player" src={{track['preview_url']}} controls></audio></p>
+                    {% else %}
+                     <p id="by-font">Sorry! No audio preview available for this track.</p>
+                    {% endif %}
+                    <div class="button"><input type="submit" name="try-again" value="Try Again" class="btn btn-light"></div>
+                </div>
+            </div>
+            {% if track['album']['images'][0]['url'] is none and track['preview_url'] is none: %}
+                <p>Sorry! No preview available for this track.</p>
+            {% endif %}
+        {% endif %}
+    </form>
+</div>
+{% endblock %}

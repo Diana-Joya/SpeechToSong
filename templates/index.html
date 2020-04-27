@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}SpeechToSong{% endblock %}
+{% block content %}
+<div class="index-body" id="font">
+    <h1 class="index-header">SpeechToSong</h1>
+    <h2>Welcome to SpeechToSong</h2>
+    <p>This application allows you to search for a song based on a spoken word/phrase</p>
+    <p>You can find the github repository at: <a href="https://github.com/Diana-Joya/SpeechToSong">https://github.com/Diana-Joya/SpeechToSong</a></p>
+    <form action="#" method="post">
+        <div class="button"><input type="submit" name="record" value="Speak!" class="btn btn-info"></div>
+        <div class="speech-input">
+            {% if error is not none: %}
+            <p class="index-error-message">
+                {{error}}
+            </p>
+            {% endif %}
+            <p>Your speech-to-text song lyrics: </p>
+            {% if voice_command is not none: %}
+                <p>
+                    <input class="form-control form-control" type="text" name="input_command" placeholder="{{voice_command}}">
+                </p>
+            {% endif %}
+        </div>
+        <div class="button"><input type="submit" name="search" value="Search" class="btn btn-info"></div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,146 @@
+body {
+    background: url(../img/background1.jpg);
+    background-size: cover;
+}
+
+p {
+    text-align: center;
+}
+
+#font {
+    font-family: 'Mitr', sans-serif;
+    font-size: 22px;
+}
+
+#artist-font {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 30px;
+    color: #447ED5;
+    text-shadow: 1px 1px 2px #74AFD4;
+    font-weight: bold;
+    text-align: center;
+}
+
+#artist-font:hover {
+    color: #322BF2;
+    text-shadow: 1px 1px 2px #F4F7F6;
+}
+
+#track-font {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 30px;
+    color: #3E62DF;
+    text-shadow: 1px 1px 2px #74AFD4;
+    font-weight: bold;
+    text-align: center;
+}
+
+#track-font:hover {
+    color: #322BF2;
+    text-shadow: 1px 1px 2px #F4F7F6;
+}
+
+#by-font {
+    color: #FFFFFF;
+}
+
+.index-header {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 90px;
+    color: #ecdd5b;
+    padding-top: 140px;
+    text-shadow: 1px 1px 2px black, 0 0 25px #ccebff, 0 0 5px blue;
+}
+
+.index-header:hover {
+    transform: scale(1.10);
+}
+
+.navbar-header {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 25px;
+    color: #ecdd5b;
+    padding: 2px;
+    text-shadow: 1px 1px 2px black, 0 0 25px #ccebff, 0 0 5px blue;
+}
+
+.index-body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
+}
+
+.index-error-message {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
+}
+
+.navbar {
+    background: black;
+}
+
+.query-error-message {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2px;
+    padding-top: 200px;
+}
+
+.returned {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.results {
+    padding-top: 40px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.cover {
+    justify-self: center;
+}
+
+.cover-art {
+    border-radius: 45px;
+    width: 550px;
+    height: 550px;
+}
+
+.cover-art:hover {
+    transform: scale(1.05);
+}
+
+.info {
+    width: 550px;
+    height: 550px;
+    display: grid;
+    grid-auto-flow: row;
+    align-items: center;
+    border-radius: 45px;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.audio-title {
+    align-self: end;
+}
+
+.audio-player {
+    align-self: center;
+}
+
